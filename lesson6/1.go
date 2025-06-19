@@ -104,13 +104,3 @@ fmt.Printf("First rune: %c %v bytes", c, size)
 
 }
 */
-
-package main
-
-import "strings"
-
-func main() {
-
-	s := "Hello"
-	newStr := strings.Replace(s, "H", "h", 1) // "hello"
-}
