@@ -2,16 +2,17 @@ package main
 
 import (
 	"fmt"
-	"math"
 )
 
 func main() {
 	// int -> float
 	// float -> int
 
-	fmt.Println(math.MaxInt8)
-	fmt.Println(math.MinInt8)
-
-	myVar := 2.2                       // float64
-	fmt.Println(myVar < math.MaxInt32) // float64 < maxInt32?
+	myVar := 2.2
+	var myVarInt int = 12
+	var myVarInt64 int64 = 13
+	fmt.Printf("%T \n", myVar)
+	fmt.Printf("%T \n", int(myVar))
+	fmt.Printf("Значение %v имеет тип %T", int(myVar), int(myVar))
+	fmt.Fprintln(myVarInt + myVarInt64)
 }
