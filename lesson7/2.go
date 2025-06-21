@@ -23,10 +23,10 @@ func myFuncReturnsError() (string, error) {
 func main() {
 	//error type
 
-	myString, myError := myFuncReturnsError()
-	if myError != nil {
+	myString, _ := myFuncReturnsError()
+	/*	if myError != nil {
 		fmt.Println(myError)
-	}
+	} */
 
 	fmt.Println(myString)
 
