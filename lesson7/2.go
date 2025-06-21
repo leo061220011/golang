@@ -12,10 +12,13 @@ func main() {
 
 package main
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func myFuncReturnsError() (string, error) {
-	return "I am String!", nil
+	return "I am String!", errors.New("I am errors error")
 }
 func main() {
 	//error type
