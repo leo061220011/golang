@@ -7,9 +7,10 @@ import (
 func main() {
 	// int -> float
 	// float -> int
-	intVar := 10
-	floatVar := 10.2
-
-	fmt.Println(intVar + int(floatVar))
+	intVar := 360
+	floatVar := 360.2
+	//res := int(floatVar)
+	//fmt.Println(res)
+	fmt.Println(intVar <= int(floatVar))
 
 }
