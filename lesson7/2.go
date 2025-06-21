@@ -9,7 +9,6 @@ func div(a, b int) (int, error) {
 		return 0, fmt.Errorf("Div by 0!")
 	}
 	return a / b, nil
-
 }
 
 func main() {
@@ -22,5 +21,4 @@ func main() {
 	}
 
 	fmt.Println(result)
-
 }
