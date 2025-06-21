@@ -15,12 +15,16 @@ package main
 import "fmt"
 
 func myFuncReturnsError() (string, error) {
-	return "I am String", fmt.Errorf("I am error!")
+	return "I am String!", fmt.Errorf("I am error!")
 }
 func main() {
 	//error type
 
 	myString, myError := myFuncReturnsError()
-	fmt.Println(myString, " ", myError)
+	if myError != nil {
+		fmt.Println(myError)
+	}
+
+	fmt.Println(myString)
 
 }
