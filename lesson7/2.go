@@ -10,6 +10,6 @@ func main() {
 	intVar := 10
 	floatVar := 10.2
 
-	fmt.Println(float64(intVar) + floatVar)
+	fmt.Println(intVar + int(floatVar))
 
 }
