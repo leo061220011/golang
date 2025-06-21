@@ -23,7 +23,7 @@ func myFuncReturnsError() (string, error) {
 func main() {
 	//error type
 
-	myString, _ := myFuncReturnsError()
+	myString, _ := myFuncReturnsError() //забили на ошибку
 	/*	if myError != nil {
 		fmt.Println(myError)
 	} */
