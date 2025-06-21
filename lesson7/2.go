@@ -2,15 +2,16 @@ package main
 
 import (
 	"fmt"
+	"math"
 )
 
 func main() {
 	// int -> float
 	// float -> int
-	intVar := 360
-	floatVar := 360.2
-	//res := int(floatVar)
-	//fmt.Println(res)
-	fmt.Println(intVar <= int(floatVar))
 
+	fmt.Println(math.MaxInt8)
+	fmt.Println(math.MinInt8)
+
+	myVar := 2.2                       // float64
+	fmt.Println(myVar < math.MaxInt32) // float64 < maxInt32?
 }
