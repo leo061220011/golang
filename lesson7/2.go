@@ -5,7 +5,11 @@ import (
 )
 
 func main() {
-	fmt.Println("Hello!" + "I am Go")
-	fmt.Println("Hello!" + "12")
+	// int -> float
+	// float -> int
+	intVar := 10
+	floatVar := 10.2
+
+	fmt.Println(float64(intVar) + floatVar)
 
 }
