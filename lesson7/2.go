@@ -7,7 +7,7 @@ import (
 
 func main() {
 
-	myIntVar := "960hello123"
+	myIntVar := "960"
 
 	myIntToStringVar, err := strconv.Atoi(myIntVar)
 
@@ -16,6 +16,6 @@ func main() {
 		return
 	}
 
-	fmt.Println("%v - %t", myIntToStringVar, myIntToStringVar)
+	fmt.Printf("%v - %T", myIntToStringVar, myIntToStringVar)
 
 }
