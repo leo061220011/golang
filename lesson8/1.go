@@ -16,7 +16,7 @@ func main() {
 	fmt.Println(planets[5] == "")
 }
 */
-
+/*
 package main
 
 import (
@@ -36,5 +36,25 @@ func main() {
 	}
 
 	fmt.Println(planets)
+	for i := 0; i < len(planets); i++ {
+		fmt.Println(planets[i])
+	}
+
+}
+*/
+
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	taskArray := [5]int{
+		82, 97, 110, 103, 101,
+	}
+	for _, r := range taskArray {
+		fmt.Printf("%c", r)
+	}
 
 }
