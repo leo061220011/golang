@@ -2,20 +2,18 @@ package main
 
 import (
 	"fmt"
-	"strconv"
+	"math"
 )
 
 func main() {
 
-	myIntVar := "960"
+	a := 260
 
-	myIntToStringVar, err := strconv.Atoi(myIntVar)
+	if a >= math.MinInt8 && a <= math.MaxInt8 {
+		fmt.Printf("true")
 
-	if err != nil {
-		fmt.Println("Я не могу это перевести!")
-		return
+	} else {
+		fmt.Printf("false")
 	}
-
-	fmt.Printf("%v - %T", myIntToStringVar, myIntToStringVar)
 
 }
