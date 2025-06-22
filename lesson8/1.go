@@ -74,8 +74,11 @@ package main
 import "fmt"
 
 func main() {
-	mySlice := []string{"Церера", "Плутон", "Хаумеа", "Макемаке", "Эрида"}
 
-	fmt.Println(mySlice)
+	ewq := [3]string{"qwe", "ewq", "asd"}
+	mySlice := []string{"Церера", "Плутон", "Хаумеа", "Макемаке", "Эрида"} // массив Slice
+
+	fmt.Println("%T\n", mySlice)
+	fmt.Println("%T\n", ewq)
 
 }
