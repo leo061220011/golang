@@ -57,14 +57,25 @@ func main() {
 
 }*/
 
+// package main
+
+// import "fmt"
+
+// func main() {
+// 	question := "?сома"
+// 	fmt.Println(question[:6])
+// 	symb := "你好"
+// 	fmt.Println(symb[:6])
+
+// }
+
 package main
 
 import "fmt"
 
 func main() {
-	question := "?сома"
-	fmt.Println(question[:6])
-	symb := "你好"
-	fmt.Println(symb[:6])
+	mySlice := []string{"Церера", "Плутон", "Хаумеа", "Макемаке", "Эрида"}
+
+	fmt.Println(mySlice)
 
 }
