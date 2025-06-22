@@ -59,28 +59,12 @@ func main() {
 
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	planets := [9]string{
-		"Меркурий",
-		"Венера",
-		"Земля",
-		"Юпитер",
-		"Сатурн",
-		"Уран",
-		"Нептун",
-		"центавра",
-	}
-
-	giants := planets[4:8]
-	gas := giants[0:2]
-	ice := giants[2:4]
-
-	fmt.Println(giants, gas, ice)
-	ice[0] = "Нептун"
-	fmt.Println(planets)
+	question := "?сома"
+	fmt.Println(question[:6])
+	symb := "你好"
+	fmt.Println(symb[:6])
 
 }
