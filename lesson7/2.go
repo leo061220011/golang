@@ -2,13 +2,13 @@ package main
 
 import (
 	"fmt"
+	"strconv"
 )
 
 func main() {
 
-	var pi rune = 960
-	var alpha rune = 940
-	var omega rune = 969
-	var bang byte = 33
-	fmt.Print(string(pi), string(alpha), string(omega), string(bang)) // Выводит: πάω!
+	myIntVar := 960
+	myIntToStringVar := strconv.Itoa(myIntVar)
+	fmt.Println("I have " + myIntToStringVar + " Dollars")
+
 }
