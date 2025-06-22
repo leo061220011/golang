@@ -24,7 +24,7 @@ import (
 )
 
 func main() {
-	planets := [8]string{
+	planets := [9]string{
 		"Меркурий",
 		"Венера",
 		"Земля",
@@ -32,6 +32,7 @@ func main() {
 		"Сатурн",
 		"Уран",
 		"Нептун",
+		"центавра",
 	}
 
 	fmt.Println(planets)
