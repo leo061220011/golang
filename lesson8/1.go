@@ -24,9 +24,16 @@ import (
 )
 
 func main() {
-	var planets [8]string
-	i := 7
+	planets := [8]string{
+		"Меркурий",
+		"Венера",
+		"Земля",
+		"Юпитер",
+		"Сатурн",
+		"Уран",
+		"Нептун",
+	}
 
-	fmt.Println(planets[i])
+	fmt.Println(planets)
 
 }
