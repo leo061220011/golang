@@ -7,8 +7,15 @@ import (
 
 func main() {
 
-	myIntVar := 960
-	myIntToStringVar := strconv.Itoa(myIntVar)
-	fmt.Println("I have " + myIntToStringVar + " Dollars")
+	myIntVar := "960hello123"
+
+	myIntToStringVar, err := strconv.Atoi(myIntVar)
+
+	if err != nil {
+		fmt.Println("Я не могу это перевести!")
+		return
+	}
+
+	fmt.Println("%v - %t", myIntToStringVar, myIntToStringVar)
 
 }
