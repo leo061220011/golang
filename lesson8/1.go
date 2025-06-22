@@ -43,6 +43,20 @@ func main() {
 }
 */
 
+/*package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	taskArray := [...]int{82, 97, 110, 103, 101}
+	for _, v := range taskArray {
+		fmt.Print(string(rune(v)))
+	}
+
+}*/
+
 package main
 
 import (
@@ -50,11 +64,23 @@ import (
 )
 
 func main() {
-	taskArray := [5]int{
-		82, 97, 110, 103, 101,
+	planets := [9]string{
+		"Меркурий",
+		"Венера",
+		"Земля",
+		"Юпитер",
+		"Сатурн",
+		"Уран",
+		"Нептун",
+		"центавра",
 	}
-	for _, r := range taskArray {
-		fmt.Printf("%c", r)
-	}
+
+	giants := planets[4:8]
+	gas := giants[0:2]
+	ice := giants[2:4]
+
+	fmt.Println(giants, gas, ice)
+	ice[0] = "Нептун"
+	fmt.Println(planets)
 
 }
