@@ -5,14 +5,10 @@ import (
 )
 
 func main() {
-	// int -> float
-	// float -> int
 
-	myVar := 2.2
-	var myVarInt int = 12
-	var myVarInt64 int64 = 13
-	fmt.Printf("%T \n", myVar)
-	fmt.Printf("%T \n", int(myVar))
-	fmt.Printf("Значение %v имеет тип %T", int(myVar), int(myVar))
-	fmt.Fprintln(myVarInt + myVarInt64)
+	var pi rune = 960
+	var alpha rune = 940
+	var omega rune = 969
+	var bang byte = 33
+	fmt.Print(string(pi), string(alpha), string(omega), string(bang)) // Выводит: πάω!
 }
