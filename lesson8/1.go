@@ -69,16 +69,31 @@ func main() {
 
 // }
 
+
+
+
+
+// package main
+
+// import "fmt"
+
+// func main() {
+
+// 	ewq := [3]string{"qwe", "ewq", "asd"}
+// 	mySlice := []string{"Церера", "Плутон", "Хаумеа", "Макемаке", "Эрида"} // массив Slice
+
+// 	fmt.Println("%T\n", mySlice)
+// 	fmt.Println("%T\n", ewq)
+
+// }
+
+
 package main
 
 import "fmt"
 
 func main() {
 
-	ewq := [3]string{"qwe", "ewq", "asd"}
-	mySlice := []string{"Церера", "Плутон", "Хаумеа", "Макемаке", "Эрида"} // массив Slice
-
-	fmt.Println("%T\n", mySlice)
+	
 	fmt.Println("%T\n", ewq)
-
-}
+	
