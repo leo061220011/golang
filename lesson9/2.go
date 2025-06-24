@@ -1,37 +1,19 @@
-// package main
-
-// import "fmt"
-
-// func Interation(t int) int {
-// 	t += 1
-// 	return t
-
-// 	//fmt.Println("Hi, Irina!")
-// 	//fmt.Println(t)
-
-// }
-
-// func main() {
-
-// 	//Cube() // Вызов функции с выводом на экран
-// 	d := 3
-// 	d = Interation(d)
-// 	fmt.Println(d)
-
-// }
-
 package main
 
 import (
 	"fmt"
 )
 
-func Interation(t int) int {
-	t += 1
-	return t
+func Interation(t *int) {
+	//t - локальная копия p
+	//Улица Ленина дом 35
+	//ул.Ленина д.35
+	*t += 1
 }
 func main() {
 	d := 3
-	d = Interation(d)
+	//var p *int
+	p := &d
+	Interation(p)
 	fmt.Println(d) // d = 4
 }
