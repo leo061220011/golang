@@ -4,16 +4,12 @@ import (
 	"fmt"
 )
 
-func Interation(t *int) {
-	//t - локальная копия p
-	//Улица Ленина дом 35
-	//ул.Ленина д.35
-	*t += 1
+func Coordinates() (int, int, int) {
+	return 2, 4, 5
 }
+
 func main() {
-	d := 3
-	//var p *int
-	p := &d
-	Interation(p)
-	fmt.Println(d) // d = 4
+	x, y, z := Coordinates()
+
+	fmt.Printf("Широта: %d Долгота: %d Высота: %d\n", x, y, z)
 }
