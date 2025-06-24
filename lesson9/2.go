@@ -1,15 +1,26 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
-func Coordinates() (int, int, int) {
-	return 2, 4, 5
+func Say(animal string) (v string) {
+	switch animal {
+	default:
+		v = "heh"
+	case "dog":
+		v = "gav"
+	case "cat":
+		v = "myau"
+	case "cow":
+		v = "mu"
+	}
+	return
 }
-
+func Print(who string, how func(string) string) {
+	fmt.Println(how(who))
+}
 func main() {
-	x, y, z := Coordinates()
-
-	fmt.Printf("Широта: %d Долгота: %d Высота: %d\n", x, y, z)
+	var voice func(string) string
+	voice = Say
+	Print("cat", voice)
+	fmt.Println(Say("cat"))
 }
