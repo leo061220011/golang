@@ -43,6 +43,7 @@ func main() {
 	Sharik := Dog{"Шарик", "Гав!"}
 	barsik.speak()
 	Sharik.speak()
+	
 	var animal interface {
 		speak()
 	}
