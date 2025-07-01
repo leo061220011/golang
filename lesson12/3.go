@@ -23,3 +23,27 @@ func main() {
 	}
 	time.Sleep(1 * time.Second)
 }
+
+//вариант кода Андрея
+
+// package main
+// import (
+// 	"fmt"
+// 	//"time"
+// )
+// func сGopher(i int, c chan string, intc chan int) {
+// 	City := []string{"Москва", "СПб", "Сочи", "Тула", "Саратов"}
+// 	c <- City[i]
+// 	intc <- i
+// }
+// func main() {
+// 	c := make(chan string)
+// 	intc := make(chan int)
+// 	for i := 0; i < 5; i++ {
+// 		go сGopher(i, c, intc)
+// 	}
+// 	for i := 0; i < 5; i++ {
+// 		gopherId := <-c
+// 		fmt.Println("gopher # ", <-intc, "В городе ", gopherId)
+// 	}
+// }
