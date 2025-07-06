@@ -22,7 +22,6 @@ func main() {
 // 	"fmt"
 // 	"os"
 // )
-
 // func main() {
 // 	data, err := os.ReadFile("example_txt.txt")
 // 	if err != nil {
