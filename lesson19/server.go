@@ -28,7 +28,14 @@ var books = []Book{}
 
 func BooksHandler(w http.ResponseWriter, r *http.Request) {
 	//fmt.Fprint(w, books)
-	json.NewEncoder(w).Encode(books)
+	//json.NewEncoder(w).Encode(books)
+	if r.Method == http.MethodGet {
+		json.NewEncoder(w).Encode(books)
+
+	}
+	if r.Method == http.MethodPost {
+		fmt.Fprint(w, "POST AA!!!")
+	}
 }
 
 func AddBookHandler(w http.ResponseWriter, r *http.Request) {
