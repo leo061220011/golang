@@ -1,13 +1,21 @@
 package main
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/gin-gonic/gin"
 )
 
+func LoggingAllRequests() gin.HandlerFunc {
+	return func(c *gin.Context) {
+		fmt.Println("New Request: ", c.Request.Method, c.Request.URL.Path)
+		c.Next()
+	}
+}
 func main() {
 	r := gin.Default()
+	r.Use(LoggingAllRequests())
 	r.GET("/", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
 			"Name": "Sergey",
@@ -31,6 +39,14 @@ func main() {
 		c.JSON(http.StatusOK, gin.H{
 			"Status": "Ok!",
 		})
+	})
+	r.PUT("/users/:name", func(c *gin.Context) {
+		name := c.Param("name")
+		c.String(http.StatusOK, "Changed, %s!", name)
+	})
+	r.DELETE("/users/:name", func(c *gin.Context) {
+		name := c.Param("name")
+		c.String(http.StatusOK, "Deleted, %s!", name)
 	})
 	r.Run(":8080")
 }
