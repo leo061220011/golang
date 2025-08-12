@@ -36,9 +36,13 @@ func BuildJWTString() (string, error) {
 }
 func GetData(tokenString string) User {
 	claims := &Claims{}
-	jwt.ParseWithClaims(tokenString, claims, func(t *jwt.Token) (interface{}, error) {
-		return []byte(SECRET_KEY), nil
+	_, err := jwt.ParseWithClaims(tokenString, claims, func(t *jwt.Token) (interface{}, error) {
+		return []byte("asdasdasdasd"), nil
 	})
+	if err != nil {
+		fmt.Println(err)
+		return User{UserId: 0, UserName: ""}
+	}
 	user := User{UserId: claims.UserId, UserName: claims.UserName}
 	return user
 }
